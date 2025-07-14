@@ -71,10 +71,6 @@ extension SwipeCollectionViewCell {
         
         swipeAction.handler?(swipeAction, accessibilityCustomAction.indexPath)
         
-        if swipeAction.style == .destructive {
-            collectionView.deleteItems(at: [accessibilityCustomAction.indexPath])
-        }
-        
         return true
     }
 }
